@@ -1,19 +1,21 @@
 $(document).ready(function() {
-  var humor = prompt("Which is more important? Humor or Looks?");
-
-    if (humor === "humor")
-    var blonde = prompt("Do you prefer light or dark hair color?");
-      if (blonde === "light") {
-     $(".lightFunny").show();
-    } else {
-     $(".darkFunny").show();
+  var personality = prompt("Which is more important? Humor or Looks?");
+  var hair = prompt("Do you prefer light or dark hair color?");
+  if (personality === "humor") {
+    if (hair === "light") {
+      $(".lightFunny").show();
+      $(".lightLooks").hide();
+    } else if (hair === "dark") {
+      $(".darkFunny").show();
+      $(".darkLooks").hide();
     }
-
-    if (humor === "looks")
-    var blonde = prompt("Do you prefer light or dark hair color?");
-      if (blonde === "dark") {
-     $(".darkLooks").show();
-    } else {
+  }
+  if (personality === "looks") {
+    if (hair === "dark") {
+      $(".darkLooks").show();
+    } else if (hair === "light") {
       $(".lightLooks").show();
     }
-  });
+  }
+
+});
