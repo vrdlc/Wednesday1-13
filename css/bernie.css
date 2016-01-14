@@ -1,3 +1,19 @@
 .over18, .under18 {
   display: none;
 }
+
+body {
+  background-color: #99ccff;
+  font-size: 22px;
+  font-family: serif;
+}
+
+.democrat {
+  font-weight: bold;
+  color: #0047b3;
+}
+
+.republican {
+  font-weight: bold;
+  color: #b30000;
+}
